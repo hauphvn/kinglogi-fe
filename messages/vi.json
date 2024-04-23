@@ -31,5 +31,28 @@
     "contact": "Liên hệ",
     "group": "Nhóm xe",
     "service": "Dịch vụ"
+  },
+  "FooterIntro": {
+    "title": "GIỚI THIỆU",
+    "address": "Địa chỉ",
+    "businessId": "Mã số doanh nghiệp",
+    "quickLink": "Liên kết nhanh",
+    "term": "Điều khoản sử dụng",
+    "privacy": "Chính sách về riêng tư",
+    "regulation": "Quy chế hoạt động sàn TMĐT"
+  },
+  "FooterInfoBank": {
+    "title": "TÀI KHOẢN NGÂN HÀNG",
+    "accountName": "Tên chủ tài khoản",
+    "bank": "Tên ngân hàng",
+    "place": "Nơi mở",
+    "accountNumber": "Số tài khoản",
+    "cashNumber": "Số thẻ",
+    "labelDownloadApp": "Tải ứng dụng KING Logi dành cho CTV"
+  },
+  "FooterInfoContact": {
+    "title": "LIÊN HỆ",
+    "subTitle": "Nếu gặp khó khăn khi đặt xe hoặc cần trợ giúp, hãy liên hệ với chúng tôi theo thông tin bên dưới.",
+    "partner": "Đối tác của chúng tôi"
   }
 }

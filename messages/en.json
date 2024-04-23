@@ -31,5 +31,28 @@
     "contact": "Contact",
     "group": "Car Group",
     "service": "Service"
+  },
+  "FooterIntro": {
+    "title": "INTRODUCTION",
+    "address": "Address",
+    "businessId": "Business ID",
+    "quickLink": "Quick link",
+    "term": "Term of use",
+    "privacy": "Privacy policy",
+    "regulation": "Regulation on operation of e-commerce floor"
+  },
+  "FooterInfoBank": {
+    "title": "BANK ACCOUNT",
+    "accountName": "Account name",
+    "bank": "Bank name",
+    "place": "Open place",
+    "accountNumber": "Account number",
+    "cashNumber": "Cash number",
+    "labelDownloadApp": "Download the KING Logi App for CTV"
+  },
+  "FooterInfoContact": {
+    "title": "CONTACT",
+    "subTitle": "If you have trouble booking or need help, please contact us using the information below.",
+    "partner": "Our Partner"
   }
 }

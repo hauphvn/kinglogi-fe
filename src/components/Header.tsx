@@ -24,12 +24,12 @@ const Header = () => {
                         title={lang('title')}
                         language={lang('language')}
                         flag={lang('flag')}/>
-                    <div className={'flex items-center w-[100px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
-                        <span className={'text-white'}>{t('login')}</span>
+                    <div className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
+                        <span className={'text-white text-[14px]'}>{t('login')}</span>
                         {/*<span className={' border-r-[1px] border-gray-500 h-[20px]'}></span>*/}
                     </div>
-                    <div className={'flex items-center w-[100px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
-                        <span className={'text-white'}>{t('register')}</span>
+                    <div className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
+                        <span className={'text-white text-[14px]'}>{t('register')}</span>
                     </div>
                 </div>
             </div>

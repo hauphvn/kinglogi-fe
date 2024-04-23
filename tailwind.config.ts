@@ -21,6 +21,7 @@ const config: Config = {
           100: "#E2E2D5",
           200: "#888883",
         },
+        highlight: "#FAB701",
         accent: "#FF5733",
         hover: "#FFC300",
         body: "#dedede",

@@ -36,7 +36,7 @@ const MotionHeaderNav = () => {
     }, [scrollY, lastScrollTop, headerHeight]);
     return (
         <motion.header
-            className={`flex py-2 shadow-md justify-between items-center px-10 min-w-screen `}
+            className={`flex py-2 shadow-md justify-between items-center px-[90px] min-w-screen `}
             style={{
                 height: headerHeight,
                 position: 'fixed',
@@ -53,16 +53,16 @@ const MotionHeaderNav = () => {
                                style={{transition: 'opacity 0.1s'}}/>
                     </div>
                 </Link>
-                <nav className={'flex gap-x-5 w-full justify-end '}>
-                    <Link className={'text-white font-bold hover:text-hover transition-all'}
+                <nav className={'flex gap-x-5 w-full justify-end text-[15px]'}>
+                    <Link className={'text-white font-bold hover:text-hover transition-all uppercase'}
                           href={'/'}>{t('home')}</Link>
-                    <Link className={'text-white font-bold hover:text-hover transition-all'}
+                    <Link className={'text-white font-bold hover:text-hover transition-all uppercase'}
                           href={'/about'}>{t('route')}</Link>
-                    <Link className={'text-white font-bold hover:text-hover transition-all'}
+                    <Link className={'text-white font-bold hover:text-hover transition-all uppercase'}
                           href={'/services'}>{t('group')}</Link>
-                    <Link className={'text-white font-bold hover:text-hover transition-all'}
+                    <Link className={'text-white font-bold hover:text-hover transition-all uppercase'}
                           href={'/contact'}>{t('service')}</Link>
-                    <Link className={'text-white font-bold hover:text-hover transition-all'}
+                    <Link className={'text-white font-bold hover:text-hover transition-all uppercase'}
                           href={'/contact'}>{t('contact')}</Link>
                 </nav>
             </div>
