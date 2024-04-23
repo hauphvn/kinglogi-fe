@@ -1,0 +1,35 @@
+{
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "hotline": "Hotline",
+    "email": "Email",
+    "register": "Sign up",
+    "login": "Sign in"
+  },
+  "SwitchLanguage": {
+    "language": "VI",
+    "flag": "🇻🇳",
+    "title": "Switch language"
+  },
+  "Home": {
+    "title": "Hello world!"
+  },
+  "About": {
+    "title": "About us"
+  },
+  "Contact": {
+    "title": "Contact us"
+  },
+  "NotFound": {
+    "title": "Page not found"
+  },
+  "Navbar": {
+    "home": "Home",
+    "route": "Cars Route",
+    "contact": "Contact",
+    "group": "Car Group",
+    "service": "Service"
+  }
+}

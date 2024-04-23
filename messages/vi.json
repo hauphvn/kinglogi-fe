@@ -1,0 +1,35 @@
+{
+  "Header": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "contact": "Liên hệ",
+    "hotline": "Hotline",
+    "email": "Email",
+    "register": "Đăng ký",
+    "login": "Đăng nhập"
+  },
+  "SwitchLanguage": {
+    "language": "EN",
+    "flag": "🇬🇧",
+    "title": "Thay đổi ngôn ngữ"
+  },
+  "Home": {
+    "title": "Xin chào!"
+  },
+  "About": {
+    "title": "Về chúng tôi"
+  },
+  "Contact": {
+    "title": "Liên hệ"
+  },
+  "NotFound": {
+    "title": "Không tìm thấy trang"
+  },
+  "Navbar": {
+    "home": "Trang chủ",
+    "route": "Chuyến xe cố định",
+    "contact": "Liên hệ",
+    "group": "Nhóm xe",
+    "service": "Dịch vụ"
+  }
+}
