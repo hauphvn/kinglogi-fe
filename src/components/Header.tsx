@@ -1,13 +1,19 @@
+'use client'
 import React from 'react';
-import {useTranslations} from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
 import SwitchLanguage from "@/components/SwitchLanguage";
 import MotionHeaderNav from "@/components/MotionHeaderNav";
+import Link from "next/link";
+import {NAV_PATH} from "@/configs/constants";
+import {useRouter} from "next/navigation";
+import {preNavigate} from "@/utils";
 
 const Header = () => {
     const t = useTranslations('Header');
     const lang = useTranslations('SwitchLanguage');
+    const localeActive = useLocale();
     return (
-        <header className={'flex justify-between items-center fixed w-full'}>
+        <header className={'z-50 flex justify-between items-center fixed w-full'}>
             <div className={'header-root-top h-[50px] flex justify-between bg-[#20003A] py-2 w-full px-[100px]'}>
                 <div className={'flex gap-x-12 items-center'}>
                     <div className={'flex gap-x-1'}>
@@ -24,13 +30,12 @@ const Header = () => {
                         title={lang('title')}
                         language={lang('language')}
                         flag={lang('flag')}/>
-                    <div className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
+                    <Link href={preNavigate(localeActive,NAV_PATH.SIGN_IN)} className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center'}>
                         <span className={'text-white text-[14px]'}>{t('login')}</span>
-                        {/*<span className={' border-r-[1px] border-gray-500 h-[20px]'}></span>*/}
-                    </div>
-                    <div className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
+                    </Link>
+                    <Link href={preNavigate(localeActive,NAV_PATH.SIGN_UP)} className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
                         <span className={'text-white text-[14px]'}>{t('register')}</span>
-                    </div>
+                    </Link>
                 </div>
             </div>
             <MotionHeaderNav/>
