@@ -15,3 +15,21 @@ export const signUpFormDefault = {
     password: '',
     phoneNumber: ''
 }
+export const signInFormValidate = () => {
+    return yup.object().shape({
+        emailOrPhoneNumber: stringRequired,
+        password: stringRequired,
+    });
+};
+export const signInFormDefault = {
+    emailOrPhoneNumber: '',
+    password: '',
+}
+export const forgetPwdFormValidate = () => {
+    return yup.object().shape({
+        email
+    });
+};
+export const forgetPwdFormDefault = {
+    email: '',
+}

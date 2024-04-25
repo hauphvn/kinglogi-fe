@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 export const metadata: Metadata = {
     title: "KING LOGI",
     description: "HỆ THỐNG ĐẶT XE VẬN TẢI HÀNG ĐẦU VIỆT NAM",
@@ -22,11 +23,14 @@ export default function LocaleLayout({
         <body>
         <div className={'flex flex-col mx-auto min-h-screen'}>
             <NextIntlClientProvider locale={locale} messages={messages}>
-                <Header/>
-                <main className={'flex-grow mx-auto max-w-4xl mt-[170px]'}>
-                    {children}
-                </main>
-                <Footer/>
+                <AntdRegistry>
+                    <Header/>
+                    <main className={'flex-grow mx-auto max-w-4xl mt-[170px]'}>
+                        {children}
+                    </main>
+                    <Footer/>
+                </AntdRegistry>
+
             </NextIntlClientProvider>
 
         </div>

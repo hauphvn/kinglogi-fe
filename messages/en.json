@@ -57,5 +57,39 @@
   },
   "FooterBottom": {
     "title": "Copyright © 2024 kinglogi.com . All rights reserved."
+  },
+  "ForgetPassword": {
+    "title": "Forget password",
+    "message": "Enter your email address and we will send a new password to log into the system",
+    "email": "Email",
+    "send": "Send",
+    "back": "Back",
+    "signIn": "Sign in",
+    "areYouMember": "Don't have an account yet?",
+    "signUp": "Register now"
+  },
+  "Login": {
+    "title": "LOGIN",
+    "message": "Fill out the information below to login.",
+    "emailOrPhone": "Email or phone number.",
+    "password": "Password",
+    "signIn": "Sign in",
+    "forgetPassword": "Forget password",
+    "areYouMember": "Don't have an account yet?",
+    "signUp": "Register now",
+    "forgotPassword": "Forgot password?",
+    "requestNewPassword": "Request new password"
+  },
+  "Register": {
+    "title": "REGISTER",
+    "message": "Fill out the information below to register a new account.",
+    "fullName": "Full name",
+    "phone": "Phone number",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "register": "Register",
+    "areYouMember": "Already have an account?",
+    "signIn": "Sign in"
   }
 }

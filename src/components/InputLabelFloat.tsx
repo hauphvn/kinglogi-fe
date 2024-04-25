@@ -28,7 +28,8 @@ const InputLabelFloat = (props: InputLabelFloatProps) => {
                 onBlur={props.onBlur}
             />
             {props.type === 'password' && (
-                <div onClick={() => setViewPass(!viewPass)} className={'absolute hover:cursor-pointer right-2 top-[10px]'}>
+                <div onClick={() => setViewPass(!viewPass)}
+                     className={'absolute hover:cursor-pointer right-2 top-[10px] w-[30px] flex justify-center items-center bg-white'}>
                     {viewPass ? <Eye className={'text-gray-500 hover:text-primaryLight'}/> :
                         <EyeOff className={'text-gray-500 hover:text-primaryLight'}/>}
                 </div>

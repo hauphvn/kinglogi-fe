@@ -7,6 +7,7 @@ export const NAV_PATH = {
     HOME: '/',
     SIGN_IN: '/signIn',
     SIGN_UP: '/signUp',
+    FORGET_PASSWORD: '/forgetPassword',
     DASHBOARD: '/admin/dashboard',
     USER: {
         DASHBOARD: '/user/dashboard',

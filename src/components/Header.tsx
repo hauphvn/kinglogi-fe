@@ -5,7 +5,6 @@ import SwitchLanguage from "@/components/SwitchLanguage";
 import MotionHeaderNav from "@/components/MotionHeaderNav";
 import Link from "next/link";
 import {NAV_PATH} from "@/configs/constants";
-import {useRouter} from "next/navigation";
 import {preNavigate} from "@/utils";
 
 const Header = () => {
@@ -30,10 +29,12 @@ const Header = () => {
                         title={lang('title')}
                         language={lang('language')}
                         flag={lang('flag')}/>
-                    <Link href={preNavigate(localeActive,NAV_PATH.SIGN_IN)} className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center'}>
+                    <Link href={preNavigate(localeActive, NAV_PATH.SIGN_IN)}
+                          className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center'}>
                         <span className={'text-white text-[14px]'}>{t('login')}</span>
                     </Link>
-                    <Link href={preNavigate(localeActive,NAV_PATH.SIGN_UP)} className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
+                    <Link href={preNavigate(localeActive, NAV_PATH.SIGN_UP)}
+                          className={'flex items-center w-[90px] hover:bg-violet-950 h-[40px] p-2 justify-center hover:cursor-pointer'}>
                         <span className={'text-white text-[14px]'}>{t('register')}</span>
                     </Link>
                 </div>

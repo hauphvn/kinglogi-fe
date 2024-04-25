@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #5E2D85;
+  --color-primary-light: #673ab7;
+  --color-primary-active: rgba(136, 97, 205, 0.37);
+  --color-primary-selected: rgba(169, 145, 211, 0.37);
+  --color-primary-dark: #20003A;
+}
+.ant-select-selector:hover, .ant-select-focused:where(.css-dev-only-do-not-override-mzwlov).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {
+  border-color: var(--color-primary-light) !important;
+}
+.ant-select-item-option .ant-select-item-option-active {
+  background-color: var(--color-primary) !important;
+}
+.ant-select-item.ant-select-item-option.ant-select-item-option-active.ant-select-item-option-selected{
+  background-color: var(--color-primary-active) !important;
+}
+.ant-select-item.ant-select-item-option.ant-select-item-option-selected{
+  background-color: var(--color-primary-selected) !important;
+}

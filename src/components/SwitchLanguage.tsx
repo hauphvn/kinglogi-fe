@@ -1,27 +1,24 @@
 'use client'
-import {useRouter} from "next/navigation";
-import {useTransition} from "react";
+import {memo, useTransition} from "react";
 import {useLocale} from "next-intl";
+import {useRouter, usePathname} from "next/navigation";
 
 interface SwitchLanguageProps {
     flag: string;
     language: string;
-    title: string
+    title: string,
 }
 
 const SwitchLanguage = (props: SwitchLanguageProps) => {
+    const router = useRouter();
+    const pathName = usePathname();
     const {flag, language, title} = props;
     const localeActive = useLocale();
     const [isPending, startTransition] = useTransition();
-    const router = useRouter();
-
     function onChangeLanguage() {
         startTransition(() => {
-            if (localeActive === 'en') {
-                router.replace('/vi');
-            } else {
-                router.replace('/en');
-            }
+            const newPath = pathName.replace(`/${localeActive}`, localeActive === 'en' ? '/vi' : '/en');
+            router.push(newPath);
         });
     }
 
@@ -35,9 +32,8 @@ const SwitchLanguage = (props: SwitchLanguageProps) => {
                 <span className={'text-white'}>{flag}</span>
                 <span className={'text-white'}>{language}</span>
             </button>
-            {/*<span className={' border-r-[1px] border-gray-500 h-[20px]'}></span>*/}
         </div>
     );
 };
 
-export default SwitchLanguage;
+export default memo(SwitchLanguage);

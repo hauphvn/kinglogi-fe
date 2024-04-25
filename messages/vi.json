@@ -57,5 +57,39 @@
   },
   "FooterBottom": {
     "title": "Bản quyền © 2024 kinglogi.com. Tất cả các quyền được bảo lưu."
+  },
+  "ForgetPassword": {
+    "title": "QUÊN MẬT KHẨU",
+    "message": "Nhập địa chỉ email của bạn và chúng tôi sẽ gửi mật khẩu mới để đăng nhập vào hệ thống",
+    "email": "Email",
+    "send": "Gửi",
+    "back": "Quay lại",
+    "signIn": "Đăng nhập",
+    "areYouMember": "Chưa có tài khoản?",
+    "signUp": "Đăng ký ngay"
+  },
+  "Login": {
+    "title": "ĐĂNG NHẬP",
+    "message": "Điền đầy đủ thông tin bên dưới để đăng nhập.",
+    "emailOrPhone": "Email hoặc Số điện thoại",
+    "password": "Mật khẩu",
+    "signIn": "Đăng nhập",
+    "forgetPassword": "Forget password",
+    "areYouMember": "Chưa có tài khoản?",
+    "signUp": "Đăng ký ngay",
+    "forgotPassword": "Quên mật khẩu?",
+    "requestNewPassword": "Yêu cầu mật khẩu mới"
+  },
+  "Register": {
+    "title": "ĐĂNG KÝ",
+    "message": "Điền đầy đủ thông tin bên dưới để đăng ký tài khoản mới.",
+    "fullName": "Họ tên",
+    "phone": "Số điện thoại",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "confirmPassword": "Confirm password",
+    "register": "Đăng ký",
+    "areYouMember": "Đã có tài khoản?",
+    "signIn": "Đăng nhập ngay"
   }
 }
