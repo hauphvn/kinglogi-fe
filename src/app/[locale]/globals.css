@@ -9,6 +9,9 @@
   --color-primary-selected: rgba(169, 145, 211, 0.37);
   --color-primary-dark: #20003A;
 }
+
+/*Customize the antd Select component*/
+
 .ant-select-selector:hover, .ant-select-focused:where(.css-dev-only-do-not-override-mzwlov).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {
   border-color: var(--color-primary-light) !important;
 }
@@ -20,4 +23,32 @@
 }
 .ant-select-item.ant-select-item-option.ant-select-item-option-selected{
   background-color: var(--color-primary-selected) !important;
+}
+
+/*Customize the antd Datepicker component*/
+:where(.css-dev-only-do-not-override-mzwlov).ant-picker-outlined:hover{
+  border-color: var(--color-primary-light) !important;
+}
+:where(.css-dev-only-do-not-override-mzwlov).ant-picker-outlined:focus, :where(.css-dev-only-do-not-override-mzwlov).ant-picker-outlined:focus-within{
+  border-color: var(--color-primary-light) !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-selected:not(.ant-picker-cell-disabled) .ant-picker-cell-inner{
+  background-color: var(--color-primary-light) !important;
+}
+:where(.css-dev-only-do-not-override-mzwlov).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before{
+  border-color: var(--color-primary-light) !important;
+}
+.ant-picker-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ant-picker-ok > button.ant-btn{
+  height: 30px;
+  width: 100%;
+  min-width: 100px;
+}
+.ant-picker-ok > button.ant-btn.css-dev-only-do-not-override-mzwlov.ant-btn-primary:not([disabled]){
+   color: white;
+  background-color: var(--color-primary-light) !important;
 }

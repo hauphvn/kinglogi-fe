@@ -1,6 +1,6 @@
 import {useTranslations} from "next-intl";
 import {Button} from "antd";
-import SelectFloatLabel from "@/components/SelectFloatLabel";
+import DatepickerFloatLabel from "@/components/DatepickerFloatLabel";
 
 export default function Home() {
     const t = useTranslations('Home');
@@ -8,10 +8,13 @@ export default function Home() {
         <div>
 
             <Button type="primary">Button</Button>
-<hr/>
-           <div className={'w-[400px] p-5'}>
-               <SelectFloatLabel id={'hauphvn'} label={'Điểm đi (*)'}/>
-           </div>
+            <hr/>
+            <div className={'w-[400px] p-5'}>
+                <DatepickerFloatLabel
+                    id={'datetimeFrom'}
+                    label={'Thời gian đón (*)'}
+                />
+            </div>
         </div>
     );
 }
