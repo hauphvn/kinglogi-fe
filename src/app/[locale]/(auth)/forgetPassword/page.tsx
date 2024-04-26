@@ -17,9 +17,6 @@ const ForgetPassword = () => {
     const {
         formState: {errors, isDirty, isValid,},
         control: controlSignUp,
-        getValues,
-        reset: resetAddress,
-        setValue,
     } = useForm({
         resolver: yupResolver(forgetPwdFormValidate()),
         mode: 'all',

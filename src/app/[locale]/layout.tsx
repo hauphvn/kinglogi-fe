@@ -25,7 +25,7 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <AntdRegistry>
                     <Header/>
-                    <main className={'flex-grow mx-auto max-w-4xl mt-[170px]'}>
+                    <main className={'flex-grow mx-auto mt-[170px]'}>
                         {children}
                     </main>
                     <Footer/>

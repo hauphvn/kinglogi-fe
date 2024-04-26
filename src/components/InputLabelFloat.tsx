@@ -35,10 +35,11 @@ const InputLabelFloat = (props: InputLabelFloatProps) => {
                 </div>
             )}
             <span
-                className={' absolute bottom-[-20px] left-0 w-full  text-red-700 font-light text-[14px]'}>{props.warning}</span>
+                className={' absolute bottom-[-20px] left-0 w-full  text-red-700 font-light text-[14px]'}>{props.warning}
+            </span>
             <label
                 htmlFor={props.id}
-                className="absolute left-0 ml-1 -translate-y-[10px] bg-white px-1 text-[12px] duration-150 ease-linear
+                className="rounded absolute left-0 ml-1 -translate-y-[10px] bg-white px-1 text-[12px] duration-150 ease-linear
                    peer-placeholder-shown:translate-y-[12px] peer-placeholder-shown:text-[14px]
                    peer-placeholder-shown:text-gray-500 peer-focus:ml-2 peer-focus:-translate-y-[12px]
                    peer-focus:px-1 peer-focus:text-[12px] peer-focus:text-primaryLight">{props.placeholder}</label>

@@ -33,3 +33,17 @@ export const forgetPwdFormValidate = () => {
 export const forgetPwdFormDefault = {
     email: '',
 }
+export const bookFixedRouteFormValidate = () => {
+    return yup.object().shape({
+        fromAddress: stringRequired,
+        toAddress: stringRequired,
+        dateTime: stringRequired,
+        busGroup: stringRequired,
+    });
+};
+export const bookFixedRouteFormDefault = {
+    fromAddress: '',
+    toAddress: '',
+    dateTime: '',
+    busGroup: '',
+}

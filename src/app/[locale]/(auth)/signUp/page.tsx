@@ -17,9 +17,6 @@ const SignUpPage = () => {
     const {
         formState: {errors, isDirty, isValid,},
         control: controlSignUp,
-        getValues,
-        reset: resetAddress,
-        setValue,
     } = useForm({
         resolver: yupResolver(signUpFormValidate()),
         mode: 'all',

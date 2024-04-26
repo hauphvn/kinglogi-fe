@@ -19,6 +19,9 @@ const config: Config = {
         primary: "#5E2D85",
         primaryLight: "#673ab7",
         primaryDark: "#20003A",
+        primaryDarkOpacityBackground: "#F8F0FF",
+        primaryDarkOpacityBorder: "#D3ACF7",
+        primaryLightOpacity: "rgba(103,58,183,0.15)",
         secondary: {
           100: "#E2E2D5",
           200: "#888883",

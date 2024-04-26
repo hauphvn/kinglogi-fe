@@ -9,6 +9,8 @@ interface SelectFloatLabelProps {
     id?: string,
     label?: string,
     height?: number,
+    warning?: string,
+    onBlur?: () => void,
 }
 
 const SelectFloatLabel = (props: SelectFloatLabelProps) => {
@@ -26,7 +28,10 @@ const SelectFloatLabel = (props: SelectFloatLabelProps) => {
                     width: '100%',
                     height: props.height || 44
                 }}
-                onBlur={() => setIsFocused(!!valueSelected)}
+                onBlur={() => {
+                    props.onBlur?.();
+                    setIsFocused(!!valueSelected);
+                }}
                 onFocus={() => setIsFocused(true)}
                 className={'w-auto custom-select'}
                 defaultValue={props.defaultValue}
@@ -40,9 +45,12 @@ const SelectFloatLabel = (props: SelectFloatLabelProps) => {
                     {value: 'Yiminghe', label: 'yiminghe'},
                     {value: 'disabled', label: 'Disabled', disabled: true},
                 ]}/>
+                <span
+                    className={' absolute bottom-[-5px] left-0 w-full  text-red-700 font-light text-[14px]'}>{props.warning}
+                </span>
             <label
                 htmlFor={props.id}
-                className={`absolute left-0 bottom-[32px] ml-1 bg-white px-1 text-[14px] duration-150 ease-linear
+                className={`rounded absolute left-1 bottom-[40px] ml-1 bg-white px-1 text-[14px] duration-150 ease-linear
     ${isFocused ? 'translate-y-[-10px] text-[14px] text-primaryLight' : 'translate-y-[12px] text-gray-500'}`}
             >
                 {props.label}

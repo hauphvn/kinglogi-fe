@@ -1,19 +1,14 @@
 import {useTranslations} from "next-intl";
-import {Button} from "antd";
-import DatepickerFloatLabel from "@/components/DatepickerFloatLabel";
+import BookFixedBusRoute from "@/components/BookFixedBusRoute";
+import BookFlexibleBusRoute from "@/components/BookFlexibleBusRoute";
 
 export default function Home() {
     const t = useTranslations('Home');
     return (
-        <div>
-
-            <Button type="primary">Button</Button>
-            <hr/>
-            <div className={'w-[400px] p-5'}>
-                <DatepickerFloatLabel
-                    id={'datetimeFrom'}
-                    label={'Thời gian đón (*)'}
-                />
+        <div className={'min-h-screen mt-5 w-full'}>
+            <div id={'home-page'} className={'flex flex-row w-full gap-x-4 justify-center'}>
+                <BookFixedBusRoute/>
+                <BookFlexibleBusRoute/>
             </div>
         </div>
     );

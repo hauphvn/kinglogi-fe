@@ -17,9 +17,6 @@ const SignInPage = () => {
     const {
         formState: {errors, isDirty, isValid,},
         control: controlSignUp,
-        getValues,
-        reset: resetAddress,
-        setValue,
     } = useForm({
         resolver: yupResolver(signInFormValidate()),
         mode: 'all',
